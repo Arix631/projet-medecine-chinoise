@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}Welcome!
+			{% endblock %}
+		</title>
+		<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>"> 
+        <link rel="stylesheet" href="{{asset('css/index.css')}}">
+        {% block stylesheets %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+
+		</head>
+		<body>
+
+
+			{# header a mettre ici #}
+
+			<header class="header">
+				<nav class="py-3">
+					<div class="container-xxl px-lg-0">
+						<div class="row">
+
+							<div class="col-auto d-flex align-items-center">
+								<a class="navbar-brand" href="#">
+									<img src="/img/yin-yang-solid-full pour dossier projet.svg" alt="Logo" height="22" class="logo-header"><span class="text-pistache1 px-2">Aziza
+										                                kebaier</span>
+									<span class="text-pistache1 ms-2">
+										阿齐扎 中医</span>
+								</a>
+
+							</div>
+
+
+							<div class="col">
+								<ul class="nav justify-content-end">
+									<li class="nav-item">
+										<a class="nav-link color2" aria-current="page" href="{{path('main_index')}}">Acceuil</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link color2" href="#">Medecine chinoise</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link color2" href="#">Soins proposé
+											<img src="/img/caret-down-fill.svg" alt="fleche-header"></a>
+									</li>
+
+
+									<li class="nav-item">
+										<a class="nav-link color2" href="#">A propos</a>
+									</li>
+									<li>
+										<a href="/views/prise-de-rendez-vous.php">
+											<button class="btn1">Prendre rendez-vous</button>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					<div class="container-xxl px-lg-0">
+						<div class="row col-12 mx-3">
+							<a href="" class="color3">Médecine traditionnelle chinoise</a>
+						</div>
+
+					</div>
+
+				</nav>
+
+			</div>
+		</body>
+	</html>
+</header>
+
+{% block body %}{% endblock %}
+
+
+{# footer a mettre ici #}
+
+
+<footer class="colorfooter">
+
+
+  <div class="container6">
+    <div class="row mx-0">
+      <div class="col-4 footer-left">
+        <h1 class="text-nowrap">AZIZA KEBAIER</h1>
+        <span>Etudiante praticienne en Médecine chinoise</span>
+        <span>Cabinet Situé à Vaulx-en-Velin</span>
+        <a href="" class="colorfooter2">Acceuil</a>
+        <a href="" class="colorfooter2">Soins proposés</a>
+        <a href="" class="colorfooter2">Prendre rendez-vous</a>
+      </div>
+      <div class="col-2">
+        <div class="colorline"></div>
+      </div>
+      <div class="col-2 footer-right">
+        <div class="contact-row">
+          <img src="/img/Vectorballonmap.png" alt="" width="15" height="25" class="placementballon">
+          <div class="lineheightballon">
+            <p class="texteballon1">2 Rue de la Poudrette </p>
+            <p class="texteballon2">centre commercial carrée de soie</p>
+            <p class="texteballon3">69120 Vaulx-en-Velin</p>
+          </div>
+        </div>
+
+
+
+        <p class="colortelephone"><img src="/img/Vectortelephone.png" alt="" width="25" height="25" class="margetelephone"> 07 85 01 53 71</p>
+
+        <p class="email1"> <img src="/img/Vectormail.png" alt="" width="25" height="18,75" class="margeEmail"> azizakebaier14@gmail.com</p>
+        <img src="/img/Frame 47 reseaux sociaux.png" alt="" width="133,71" height="25">
+      </div>
+      <div class="col-auto marginmap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d984.061489588564!2d4.918665310045923!3d45.764251492938776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c0fec4d50931%3A0x6159b81558221432!2s2%20Rue%20de%20la%20Poudrette%2C%2069100%20Villeurbanne!5e0!3m2!1sfr!2sfr!4v1769503023705!5m2!1sfr!2sfr" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="container-fluid px-0">
+    <div class="row g-0"  id="marginborder-foot">
+      <div class="col-12">
+        <div class="footer-bottom">
+          <div class="container-fluid corporatebottom">
+            <p>© 2026 Aziza Kebaier — Tous droits réservés</p>
+            <p>Mentions légales — Politique de confidentialité</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+
+{# script a mettre ici  #}
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const el = document.querySelector("#calendar-test");
+    if (!el) return;
+
+    const fr = {
+      days: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
+      daysShort: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
+      daysMin: ['Di', 'Lu', 'Ma', 'Me', 'Je', 'Ve', 'Sa'],
+      months: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
+      monthsShort: ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Déc'],
+      today: "Aujourd'hui",
+      clear: 'Effacer',
+      dateFormat: 'dd/MM/yyyy',
+      timeFormat: 'HH:mm',
+      firstDay: 1
+    };
+
+    new AirDatepicker(el, {
+      inline: true,
+      locale: fr,
+      firstDay: 1
+    });
+  });
+</script>
+
+</body>
+</html>
