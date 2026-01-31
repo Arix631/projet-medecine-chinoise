@@ -336,23 +336,21 @@
   background-image: url(../img/imagepage\ medecinechinoise1.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 80px;
+ margin-top: 80px;
   width: 100%;
   height: 960px;
 }
 
 .page2paragraphe1 {
-  margin-top: 480px;
+
   font-size: 32px;
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
-  width: 677px;
-  height: 132px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;  
   color: #FFFFFF;
   font-weight: 500;
 }
 
 .page2titreh2 {
-  margin-top: 700px;
+
   color: #597535;
   font-size: 32px;
   font-weight: bold;
@@ -620,7 +618,7 @@
 
 .pucemoxatherapie {
   font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
-  font-size: 32px;
+  font-size:  32px;
 }
 
 .imgmoxathérapiegrande {

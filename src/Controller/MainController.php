@@ -14,7 +14,15 @@ final class MainController extends AbstractController
         return $this->render('main/index.html.twig', []);
     }
 
-
-
+    #[Route('/histoire', name: 'main_histoire')]
+    public function histoire(): Response
+    {
+        return $this->render('main/histoire.html.twig', []);
+    }
     
+    #[Route('/medecine', name: 'main_medecine')]
+    public function medecine(): Response
+    {
+        return $this->render('main/medecine.html.twig', []);
+    }
 }
