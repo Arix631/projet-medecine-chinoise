@@ -1,0 +1,93 @@
+<footer class="colorfooter">
+
+
+  <div class="container6">
+    <div class="row mx-0">
+      <div class="col-4 footer-left">
+        <h1 class="text-nowrap">AZIZA KEBAIER</h1>
+        <span>Etudiante praticienne en Médecine chinoise</span>
+        <span>Cabinet Situé à Vaulx-en-Velin</span>
+        <a href="" class="colorfooter2">Acceuil</a>
+        <a href="" class="colorfooter2">Soins proposés</a>
+        <a href="" class="colorfooter2">Prendre rendez-vous</a>
+      </div>
+      <div class="col-2">
+        <div class="colorline"></div>
+      </div>
+      <div class="col-2 footer-right">
+        <div class="contact-row">
+          <img src="/img/Vectorballonmap.png" alt="" width="15" height="25" class="placementballon">
+          <div class="lineheightballon">
+            <p class="texteballon1">2 Rue de la Poudrette </p>
+            <p class="texteballon2">centre commercial carrée de soie</p>
+            <p class="texteballon3">69120 Vaulx-en-Velin</p>
+          </div>
+        </div>
+
+
+
+        <p class="colortelephone"><img src="/img/Vectortelephone.png" alt="" width="25" height="25" class="margetelephone"> 07 85 01 53 71</p>
+
+        <p class="email1"> <img src="/img/Vectormail.png" alt="" width="25" height="18,75" class="margeEmail"> azizakebaier14@gmail.com</p>
+        <img src="/img/Frame 47 reseaux sociaux.png" alt="" width="133,71" height="25">
+      </div>
+      <div class="col-auto marginmap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d984.061489588564!2d4.918665310045923!3d45.764251492938776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c0fec4d50931%3A0x6159b81558221432!2s2%20Rue%20de%20la%20Poudrette%2C%2069100%20Villeurbanne!5e0!3m2!1sfr!2sfr!4v1769503023705!5m2!1sfr!2sfr" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="container-fluid px-0">
+    <div class="row g-0"  id="marginborder-foot">
+      <div class="col-12">
+        <div class="footer-bottom">
+          <div class="container-fluid corporatebottom">
+            <p>© 2026 Aziza Kebaier — Tous droits réservés</p>
+            <p>Mentions légales — Politique de confidentialité</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</footer>
+<!-- <script src="/assets/libs/air-datepicker/air-datepicker.js"></script> -->
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const el = document.querySelector("#calendar-test");
+    if (!el) return;
+
+    const fr = {
+      days: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
+      daysShort: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
+      daysMin: ['Di', 'Lu', 'Ma', 'Me', 'Je', 'Ve', 'Sa'],
+      months: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
+      monthsShort: ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Déc'],
+      today: "Aujourd'hui",
+      clear: 'Effacer',
+      dateFormat: 'dd/MM/yyyy',
+      timeFormat: 'HH:mm',
+      firstDay: 1
+    };
+
+    new AirDatepicker(el, {
+      inline: true,
+      locale: fr,
+      firstDay: 1
+    });
+  });
+</script>
+
+
+
+
+
+
+</body>
+
+</html>

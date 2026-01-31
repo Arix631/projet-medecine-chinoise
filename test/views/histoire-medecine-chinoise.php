@@ -1,0 +1,131 @@
+<?php require_once('_header.php') ?>
+    <main>
+        <section class="image1page2">
+            <div class="container-xxl">
+                <div class="row">
+                    <div class="col">
+                        <p class="page2paragraphe1">’’ La santé n’est pas l’absence de maladie, mais l’équilibre
+                            harmonieux du corps et de l’esprit ’’</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h2 class="page2titreh2"> Qu’est-ce que la Médecine Traditionnelle Chinoise ?</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="page2paragraphe2">La médecine traditionnelle chinoise (MTC) aussi appelée 中医 (Zhōng
+                            yī) en chinois, est un système
+                            millénaire de santé et de bien-être. Fondamentalement holistique, elle vise à équilibrer le
+                            corps et
+                            l’esprit grâce à un ensemble complexe de concepts philosophiques et de pratiques de
+                            bien-être.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h3 class="page2titreh3">1. Les principes fondamentaux</h3>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-6">
+                        <img src="../img/image principefondamentauxpage2.png" alt="">
+                    </div>
+                    <div class="col-6">
+                        <p class="paragraphe3page2">La médecine traditionnelle chinoise est une approche holistique
+                            basée sur l’équilibre du
+                            corps, de l’esprit et des énergies vitales. Elle repose sur les principes du <strong>Qi
+                                (énergie
+                                vitale)</strong>, du <strong>Yin et Yang</strong> , et des <strong>cinq éléments (Bois,
+                                Feu, Terre, Métal, Eau).</strong></p>
+                    </div>
+
+                </div>
+                <div class="container-xxl">
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="page2emetitreh3">2.Histoire et Tradition </h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="page2paragraphe4">La fondation mythique de la médecine chinoise remonte à
+                                trois
+                                empereurs considérés comme ses
+                                « pères » : l’empereur Fuxi, auteur présumé du Yi Jing (Livre des mutations), le
+                                plus ancien
+                                livre chinois ; l’empereur Shennong, père de la phytothérapie, de l’agriculture, et
+                                du Pensa’o (Traité de matières médicinales ) et l ’empereur Huang Di (surnommé
+                                l’empereur Jaune), à l’origine de ce que l’on considère comme la bible de médecine
+                                chinoise, Huangdi Nei Jing, et créateur des rites et des pratiques de la discipline.
+                                Dans cet ouvrage, toutes les conceptions taoïstes du corps humain sont décrites et
+                                débattues. Cependant, deux idées fondamentales s’imposent:</p>
+                            <ul>
+                                <li class="page2li">le corps et l’esprit ne font qu’un ;</li>
+                                <li class="page2li">
+                                    la recherche de la « bonne santé » est en réalité celle du rétablissement
+                                    des énergies fondées sur l’équilibre de la nature.
+                                </li>
+                            </ul>
+                            <p class="page2li">La médecine chinoise s’est développée et construite avec
+                                une continuité remarquable pendant
+                                des milliers d’années.
+                                La popularité et l’efficacité de cette pratique est aujourd’hui indéniable, tant
+                                dans une
+                                approche de bien-être que lors des prises en charge hospitalières.</p>
+
+                        </div>
+                        <div class="col-6">
+                            <img src="../img/image3page2histoireettradition.png" alt="img tradition et histoire"
+                                class="classgap1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3 class="titreh3page2">Frise chronologique et histoire de la medecine chinoise</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col text-center">
+                    <img src="../img/frise-chronologique-histoire-jpg 1.png" alt="" class="imgfrise">
+                </div>
+            </div>
+            <div class="container-xxl">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="page2préventive"> 3. Approche préventive </h3>
+                    </div>
+                    
+
+                </div>
+                <div class="row">
+                        <div class="col">
+                            <p class="texteapprochepreventive">La médecine traditionnelle chinoise ne se limite pas au
+                                traitement des symptômes : elle vise
+                                à préserver l’équilibre du corps avant même que la maladie ne s’installe. Grâce à une
+                                approche globale, nous aidons chacun à maintenir une santé durable et harmonieuse.</p>
+                        </div>
+                 </div>
+                 <div class="row">
+                    <div class="col text-center">
+                        <img src="../img/image approche preventive medecine chinoise 1.png" alt="" class="imgapprochepreventive">
+                    </div>
+                 </div>
+
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+<?php require_once '_footer.php' ?>
