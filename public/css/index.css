@@ -12740,6 +12740,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* ici css du footer en bas */
 .colorfooter {
   background: #597535 !important;
   width: 100%;
@@ -12866,6 +12867,7 @@ textarea.form-control-lg {
 }
 
 /* --- Tes styles (après Bootstrap) --- */
+/* ici header */
 .header {
   background-color: #EFE7DB;
 }
