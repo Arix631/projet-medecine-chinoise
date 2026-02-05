@@ -53,7 +53,8 @@
 						</div>
 						<div class="col-6">
 						<form action="">
-						<input type="text" id="date-rdv" disabled>
+						<input type="text" id="date-rdv">
+						<input type="text" id="time" disabled>
 					
 						</form>
 						</div>
@@ -66,7 +67,7 @@
 
 
 		</main>
-		<script src="/assets/libs/air-datepicker/air-datepicker.js"></script>
+	 
 
 <script src="{{ asset('air-datepicker/air-datepicker.js') }}"></script>
   <script>
@@ -92,12 +93,36 @@
       locale: fr,
       firstDay: 1,
       onSelect: ({date, formattedDate, datepicker}
+	  
 ) => {
        const date_rdv = document.querySelector("#date-rdv");
         // console.log(date, formattedDate, datepicker);
 		date_rdv.value = formattedDate;
+		const timeInput = document.querySelector("#time");
+  timeInput.disabled = false;
+		
+		
     }
     });
+      
+	 new AirDatepicker('#time', {
+    onlyTimepicker: true,
+    timeFormat: 'hh:mm'
+});
+	 const time_rdv = document.querySelector("#time");
+		time_rdv.value = 'hh:mm';
+		console.log(document.querySelector('#timeInput'));
+
+
+
+
   });
+
+
+
+
+
+
+
 </script>
 	{% endblock %}
