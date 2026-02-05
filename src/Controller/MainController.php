@@ -19,10 +19,15 @@ final class MainController extends AbstractController
     {
         return $this->render('main/histoire.html.twig', []);
     }
-    
+
     #[Route('/medecine', name: 'main_medecine')]
     public function medecine(): Response
     {
         return $this->render('main/medecine.html.twig', []);
+    }
+    #[Route('/consultation', name: 'main_consultation')]
+    public function consultation(): Response
+    {
+        return $this->render('main/consultation.html.twig', []);
     }
 }
