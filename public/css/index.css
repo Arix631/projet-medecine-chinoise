@@ -41,6 +41,9 @@
   color: #FFFFFF;
 }
 
+.nav-link:hover{
+  color: black !important;
+}
 .btn2 {
   width: 289px;
   height: 65px;

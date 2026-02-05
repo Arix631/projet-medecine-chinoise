@@ -34,7 +34,7 @@
 
 
 							<div class="col">
-								<ul class="nav justify-content-end">
+								<ul class="nav justify-content-end ">
 									<li class="nav-item">
 										<a class="nav-link color2" aria-current="page" href="{{path('main_index')}}">Acceuil</a>
 									</li>
@@ -140,32 +140,8 @@
 
 
 {# script a mettre ici  #}
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const el = document.querySelector("#calendar-test");
-    if (!el) return;
 
-    const fr = {
-      days: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
-      daysShort: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
-      daysMin: ['Di', 'Lu', 'Ma', 'Me', 'Je', 'Ve', 'Sa'],
-      months: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
-      monthsShort: ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Déc'],
-      today: "Aujourd'hui",
-      clear: 'Effacer',
-      dateFormat: 'dd/MM/yyyy',
-      timeFormat: 'HH:mm',
-      firstDay: 1
-    };
 
-    new AirDatepicker(el, {
-      inline: true,
-      locale: fr,
-      firstDay: 1
-    });
-  });
-</script>
-<script src="{{ asset('air-datepicker/air-datepicker.js') }}"></script>
 
 
 </body>
