@@ -23,7 +23,7 @@
 						<div class="row">
 
 							<div class="col-auto d-flex align-items-center">
-								<a class="navbar-brand" href="#">
+								<a class="navbar-brand" href="{{path('main_index')}}">
 									<img src="/img/yin-yang-solid-full pour dossier projet.svg" alt="Logo" height="22" class="logo-header"><span class="text-pistache1 px-2">Aziza
 										                                kebaier</span>
 									<span class="text-pistache1 ms-2">
@@ -39,19 +39,19 @@
 										<a class="nav-link color2" aria-current="page" href="{{path('main_index')}}">Acceuil</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link color2" href="#">Medecine chinoise</a>
+										<a class="nav-link color2" href={{path('main_histoire')}}>Medecine chinoise</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link color2" href="#">Soins proposé
+										<a class="nav-link color2" href={{path('main_medecine')}}>Soins proposé
 											<img src="/img/caret-down-fill.svg" alt="fleche-header"></a>
 									</li>
 
 
 									<li class="nav-item">
-										<a class="nav-link color2" href="#">A propos</a>
+										<a class="nav-link color2" href="{{ path('main_index')}}#lienapropos">A propos</a>
 									</li>
 									<li>
-										<a href="/views/prise-de-rendez-vous.php">
+										<a href={{path('main_consultation')}}>
 											<button class="btn1">Prendre rendez-vous</button>
 										</a>
 									</li>
@@ -165,6 +165,8 @@
     });
   });
 </script>
+<script src="{{ asset('air-datepicker/air-datepicker.js') }}"></script>
+
 
 </body>
 </html>

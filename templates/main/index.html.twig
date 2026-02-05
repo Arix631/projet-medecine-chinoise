@@ -22,8 +22,8 @@
 
             </div>
             <div class="col btndiv">
-                <button class="btn2">Prendre rendez-vous</button>
-                <button class="btn3">Découvrir les soins que je proposes</button>
+               <a href={{path('main_consultation')}}><button class="btn2">Prendre rendez-vous</button></a> 
+                <a href={{path('main_medecine')}}><button class="btn3">Découvrir les soins que je proposes</button></a>
             </div>
 
         </div>
@@ -55,19 +55,19 @@
         <div class="container-xxl">
             <div class="row line1">
                 <div class="card card1" style="width: 18rem;">
-                    <img src="../img/principe fondamentaux medecine chinoise.png" class="rounded-5 img2 mx-3"
+                    <a href="{{ path('main_histoire')}}#lienprincipefondamentaux" class="deletedecoration"><img src="../img/principe fondamentaux medecine chinoise.png" class="rounded-5 img2 mx-3"
                         alt="image2">
                     <div class="card-body">
-                        <h5 class="card-title navbar-brand card2 "> <img
+                        <h5 class="card-title navbar-brand card2"> <img
                                 src="../img/yin-yang-solid-full pour dossier projet.svg" alt="logo1" height="22"
                                 width="22"> &nbsp; les principes fondamentaux</h5>
                         <p class="card-text my-0 card22">Basée sur les concepts de Yin et Yang, des Cinq Éléments et
                             de la
                             circulation du Qi (énergie vitale) à travers les méridiens du corps.</p>
-                    </div>
+                    </div></a>
                 </div>
                 <div class="card card1" style="width: 18rem;">
-                    <img src="../img/image histoire et tradition1.png" class="rounded-5 img2 mx-3" alt="image2">
+                    <a href="{{ path('main_histoire')}}#lienhistoireettradition" class="deletedecoration"><img src="../img/image histoire et tradition1.png" class="rounded-5 img2 mx-3" alt="image2">
                     <div class="card-body">
                         <h5 class="card-title navbar-brand card2"> <img
                                 src="../img/yin-yang-solid-full pour dossier projet.svg" alt="logo1" height="22">
@@ -75,17 +75,17 @@
                         <p class="card-text cardbis">Développée en Chine il y a plus de 2500 ans, cette médecine
                             ancestrale
                             continue d'évoluer tout en préservant ses principes fondamentaux.</p>
-                    </div>
+                    </div></a>
                 </div>
                 <div class="card card1" style="width: 18rem;">
-                    <img src="../img/image-approche-preventive1.png" class="rounded-5 img2 mx-3" alt="image2">
+                    <a href="{{ path('main_histoire')}}#approchepreventive" class="deletedecoration"><img src="../img/image-approche-preventive1.png" class="rounded-5 img2 mx-3" alt="image2">
                     <div class="card-body">
                         <h5 class="card-title navbar-brand card2"> <img
                                 src="../img/yin-yang-solid-full pour dossier projet.svg" alt="logo1" height="22">
                             &nbsp; Approche préventive</h5>
                         <p class="card-text cardbis2">Vise à maintenir l'équilibre du corps avant l'apparition de symptômes,
                             en traitant la personne dans sa globalité plutôt que la maladie isolément.</p>
-                    </div>
+                    </div></a>
                 </div>
             </div>
 
@@ -109,7 +109,7 @@
         <div class="container-xxl d-flex justify-content-center sectiongap1">
 
             <div class="card sectionsoins1" style="width: 18rem;">
-                <img src="../img/close-up-needle-hands-physiotherapist-doing-dry-needling 1.png"
+                <a href="{{ path('main_medecine')}}#lienacupuncture" class="deletedecoration"><img src="../img/close-up-needle-hands-physiotherapist-doing-dry-needling 1.png"
                     class="img-thumbnail sectionsoinscolorimg" alt="...">
                 <div class="card-body">
                     <h5 class="card-title  cardsectionsoins1"> <img src="../img/aiguille-acunpunture.svg"
@@ -120,45 +120,45 @@
                         fines aiguilles pour
                         rééquilibrer la circulation de l'énergie et soulager divers troubles.</p>
 
-                </div>
+                </div></a>
             </div>
 
             <div class="card sectionsoins1" style="width: 18rem;">
-                <img src="../img/img massage tuina.png" class="img-thumbnail sectionsoinscolorimg" alt="...">
+               <a href="{{ path('main_medecine')}}#lienmassage" class="deletedecoration"> <img src="../img/img massage tuina.png" class="img-thumbnail sectionsoinscolorimg" alt="...">
                 <div class="card-body">
                     <h5 class="card-title  cardsectionssoins2"> <img src="../img/masssagechinois.svg" alt=""
                             class="logosvg"> &nbsp;&nbsp; Massage
                         Chinois</h5>
-                    <p class="card-text sectionsoinstext2">le « guérisseur » manipule le système des méridiens,
+                    <p class="card-text sectionsoinstext2">le «guérisseur» manipule le système des méridiens,
                         composé de points et
-                        de voies énergétiques internes, favorisant la circulation du « qi », ou énergie
+                        de voies énergétiques internes, favorisant la circulation du «qi», ou énergie
                         corporelle,
                         et du sang dans tout le corps.</p>
 
-                </div>
+                </div></a>
             </div>
             <div class="card sectionsoins1" style="width: 18rem;">
-                <img src="../img/img ventouse.png" class="img-thumbnail sectionsoinscolorimg" alt="...">
+               <a href="{{ path('main_medecine')}}#lienventouse" class="deletedecoration"> <img src="../img/img ventouse.png" class="img-thumbnail sectionsoinscolorimg" alt="...">
                 <div class="card-body">
                     <h5 class="card-title  cardsectionsoins3"> <img src="../img/ventouse2retravailler.svg"
                             alt="" class="logosvg" width="25" height="30"> &nbsp; Ventouse</h5>
                     <p class="card-text sectionsoinstext3">L'utilisation de la ventouse en tant que thérapie est
                         une
                         pseudoscience. Elle se fonde sur le principe qu'un récipient en forme de cloche crée une
-                        dépression par effet de succion sur la peau. </p>
-                </div>
+                        dépression par effet de succion sur la peau. </p>
+                </div></a>
             </div>
             <div class="card sectionsoins1" style="width: 18rem;">
-                <img src="../img/image moxathérapie 1.png" class="img-thumbnail sectionsoinscolorimg" alt="...">
+                <a href="{{ path('main_medecine')}}#lienmoxatherapie" class="deletedecoration"><img src="../img/image moxathérapie 1.png" class="img-thumbnail sectionsoinscolorimg" alt="...">
                 <div class="card-body">
                     <h5 class="card-title  cardsectionsoins4"> <img src="../img/moxa1logo 1.svg" alt=""
                             width="84px" height="56px" class="logomoxa1"> &nbsp; Moxathérapie</h5>
-                    <p class="card-text sectionsoinstext4">La moxibustion est une méthode d’application de
+                    <p class="card-text sectionsoinstext4">La moxibustion est une méthode d’application de
                         chaleur sur des zones
-                        déterminées de la peau. C’est une pratique ancestrale puisqu’on la retrouve dans le Nei
+                        déterminées de la peau. C’est une pratique ancestrale puisqu’on la retrouve dans le Nei
                         Jing, le plus ancien ouvrage de MTC.</p>
 
-                </div>
+                </div></a>
             </div>
         </div>
 
@@ -170,13 +170,13 @@
                 <div class="col-3">
                 </div>
                 <div class="col-8">
-                    <h2 class="apropos1">À propos de moi</h2>
+                    <h2 class="apropos1" id="lienapropos">À propos de moi</h2>
                 </div>
 
             </div>
-            <div class="row">
+            
                 <hr class="border-bottom border-3 border-success opacity-75 hr3" style="width: 145px;">
-            </div>
+            
             <div class="row">
                 <div class="col-3"></div>
                 <div class="col-8">
