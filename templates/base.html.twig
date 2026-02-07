@@ -140,7 +140,61 @@
 
 
 {# script a mettre ici  #}
+<script src="{{ asset('air-datepicker/air-datepicker.js') }}"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const el = document.querySelector("#calendar-test");
+  if (!el) return;
 
+  const fr = {
+    days: ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'],
+    daysShort: ['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'],
+    daysMin: ['Di','Lu','Ma','Me','Je','Ve','Sa'],
+    months: ['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'],
+    monthsShort: ['Jan','Fév','Mar','Avr','Mai','Juin','Juil','Août','Sep','Oct','Nov','Déc'],
+    today: "Aujourd'hui",
+    clear: 'Effacer',
+    dateFormat: 'dd/MM/yyyy',
+    timeFormat: 'HH:mm',
+    // timePicker:["09:00","10:00","11:00","14:00","15:00","16:00"],
+    firstDay: 1
+  };
+
+  // 1) Timepicker (créé UNE FOIS)
+  // const timePicker = new AirDatepicker('#time', {
+  //   onlyTimepicker: true,
+  //   timeFormat: 'HH:mm'
+  // });
+
+  // 2) Datepicker
+  new AirDatepicker(el, {
+    inline: true,
+    locale: fr,
+    firstDay: 1,
+   
+    onSelect: ({ date,formattedDate}) => {
+      document.querySelector("#time").value = formattedDate;
+    
+          
+      // const timeInput = document.querySelector("#time");
+      // timeInput.disabled = false;
+        const h = String(date.getHours()).padStart(2, "0");
+  const m = String(date.getMinutes()).padStart(2, "0");
+  document.querySelector("#horaire").value = `${h}:${m}`;
+      
+    }
+  });
+  
+
+});
+
+
+
+
+
+
+
+</script>
 
 
 

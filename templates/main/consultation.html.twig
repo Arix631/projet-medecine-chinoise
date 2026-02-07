@@ -52,11 +52,10 @@
 							</div>
 						</div>
 						<div class="col-6">
-						<form action="">
-						<input type="text" id="date-rdv">
-						<input type="text" id="time" disabled>
-					
-						</form>
+						                 selectionner l'horaire disponible
+
+                      <input type="text" id="time">
+                      <input type="text" id="horaire">
 						</div>
 
 
@@ -69,60 +68,5 @@
 		</main>
 	 
 
-<script src="{{ asset('air-datepicker/air-datepicker.js') }}"></script>
-  <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const el = document.querySelector("#calendar-test");
-    if (!el) return;
 
-    const fr = {
-      days: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
-      daysShort: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
-      daysMin: ['Di', 'Lu', 'Ma', 'Me', 'Je', 'Ve', 'Sa'],
-      months: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
-      monthsShort: ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Déc'],
-      today: "Aujourd'hui",
-      clear: 'Effacer',
-      dateFormat: 'dd/MM/yyyy',
-      timeFormat: 'HH:mm',
-      firstDay: 1
-    };
-
-    new AirDatepicker(el, {
-      inline: true,
-      locale: fr,
-      firstDay: 1,
-      onSelect: ({date, formattedDate, datepicker}
-	  
-) => {
-       const date_rdv = document.querySelector("#date-rdv");
-        // console.log(date, formattedDate, datepicker);
-		date_rdv.value = formattedDate;
-		const timeInput = document.querySelector("#time");
-  timeInput.disabled = false;
-		
-		
-    }
-    });
-      
-	 new AirDatepicker('#time', {
-    onlyTimepicker: true,
-    timeFormat: 'hh:mm'
-});
-	 const time_rdv = document.querySelector("#time");
-		time_rdv.value = 'hh:mm';
-		console.log(document.querySelector('#timeInput'));
-
-
-
-
-  });
-
-
-
-
-
-
-
-</script>
 	{% endblock %}
