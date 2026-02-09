@@ -8,6 +8,7 @@
 		</title>
 		<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>"> 
         <link rel="stylesheet" href="{{asset('css/index.css')}}">
+        <link rel="stylesheet" href="{{ asset('flatpickr/dist/flatpickr.min.css') }}">
         {% block stylesheets %}{% endblock %}
         {% block javascripts %}{% endblock %}
 
@@ -141,62 +142,34 @@
 
 {# script a mettre ici  #}
 <script src="{{ asset('air-datepicker/air-datepicker.js') }}"></script>
-  <script>
-  document.addEventListener("DOMContentLoaded", () => {
-  const el = document.querySelector("#calendar-test");
-  if (!el) return;
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const input = document.querySelector("#calendarInput.calendar-box");
+  if (!input) return;
 
   const fr = {
     days: ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'],
     daysShort: ['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'],
     daysMin: ['Di','Lu','Ma','Me','Je','Ve','Sa'],
     months: ['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'],
-    monthsShort: ['Jan','Fév','Mar','Avr','Mai','Juin','Juil','Août','Sep','Oct','Nov','Déc'],
+    monthsShort: ['Jan','Fév','Mar','Avr','Mai','Jun','Jul','Aoû','Sep','Oct','Nov','Déc'],
     today: "Aujourd'hui",
-    clear: 'Effacer',
-    dateFormat: 'dd/MM/yyyy',
-    timeFormat: 'HH:mm',
-    // timePicker:["09:00","10:00","11:00","14:00","15:00","16:00"],
+    clear: "Effacer",
     firstDay: 1
   };
 
-  // 1) Timepicker (créé UNE FOIS)
-  // const timePicker = new AirDatepicker('#time', {
-  //   onlyTimepicker: true,
-  //   timeFormat: 'HH:mm'
-  // });
-
-  // 2) Datepicker
-  new AirDatepicker(el, {
-    inline: true,
+  new AirDatepicker(input, {
     locale: fr,
-    firstDay: 1,
-   
-    onSelect: ({ date,formattedDate}) => {
-      document.querySelector("#time").value = formattedDate;
-    
-          
-      // const timeInput = document.querySelector("#time");
-      // timeInput.disabled = false;
-        const h = String(date.getHours()).padStart(2, "0");
-  const m = String(date.getMinutes()).padStart(2, "0");
-  document.querySelector("#horaire").value = `${h}:${m}`;
-      
+    dateFormat: "dd/MM/yyyy",
+    onSelect: ({ formattedDate }) => {
+      input.value = formattedDate || "";
     }
   });
-  
-
 });
-
-
-
-
-
-
-
 </script>
 
-<script src="{{ asset('flatpickr/dist/flatpickr.min.js') }}"></script>
+
+
 
 </body>
 </html>

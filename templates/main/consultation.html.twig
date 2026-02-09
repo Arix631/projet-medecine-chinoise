@@ -45,23 +45,38 @@
 
 
 					<div class="row">
-					
-						<div class="col-6">
-							<div class="container5 mx-4 my-4">
-						
-							<div id="calendar-test" class="calendar-box"></div>
-							
-							</div>
-						</div>
-						<div class="col-6">
-						                 selectionner l'horaire disponible
+                                  <div class="col-md-6">
+                           <h5>Choisir une date</h5>
+                             <div id="calendar" class="calendar-box"></div>
 
-                      <input type="text" id="time">
-                      <input type="text" id="horaire">
-						</div>
+                       </div>
 
+                        <div class="col-md-6">
+						    <form action="">
+                          <h5>Créneaux disponibles</h5>
+						  <input type="text" id="date_rdv" name="date_rdv" class="form-control" readonly>
+                           <div id="creneaux" class="mt-2">
+						   
+						   <select name="creneau">
+						   <option value="" >9h:00</option>
+						   <option value="">9h:30</option>
+						   <option value="">10h:00</option>
+						   </select>
+						  
+						   
+						   
+						   
+						   
+						   
+						   
+						   </div>
+                              </form>
 
-					</div>
+{#                     
+                       <input type="hidden" id="rdv-datetime" name="rdv_datetime"> #}
+  </div>
+</div>
+</div>
 				</div>
 
 			</section>
